@@ -3,11 +3,43 @@
   <head>
     <meta charset="utf-8">
     <title>Change Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <h1>Change Calculator</h1>
   </head>
   <body>
-    <!-- Write your markup here -->
+    <div class="selection">
+      <div class="input">
+        <label for="amount-due">How much is due for the sale?</label>
+        <input id="amount-due" placeholder="Amount Due" step="0.01"/>
+      </div>
+      <div class="input">
+        <label for="amount-received">How much has the customer given you?</label>
+        <input id="amount-received" placeholder="Amount Received" step="0.01"/>
+      </div>
+    </div>
 
-    <!-- Don't forget to add your <script> tag here -->
+    <button id="calculate-change">
+      <img src="images/register.png" />
+    </button>
+    
+    <div id="summary">
+      <p id="result">Change: <span id="total-change"></span></p>
+    </div>
 
+    <div id="output" class="hidden">
+      <div class="change">
+        <div id="twentyDollar" class="bill hidden"><img src="images/twenty-dollar.png" class="bill-img"/> <p id="twentyDollar-output"></p></div>
+        <div id="tenDollar" class="bill hidden"><img src="images/ten-dollar.png" class="bill-img"/> <p id="tenDollar-output"></p></div>
+        <div id="fiveDollar" class="bill hidden"><img src="images/five-dollar.png" class="bill-img"/> <p id="fiveDollar-output"></p></div>
+        <div id="twoDollar" class="bill hidden"><img src="images/two-dollar.png" class="bill-img"/> <p id="twoDollar-output"></p></div>
+        <div id="oneDollar" class="bill hidden"><img src="images/one-dollar.png" class="bill-img"/> <p id="oneDollar-output"></p></div>
+        <div id="quarters" class="coin hidden"><img src="images/quarters.png" class="coin-img"/> <p id="quarters-output"></p></div>
+        <div id="dimes" class="coin hidden"><img src="images/dimes.png" class="coin-img"/> <p id="dimes-output"></p></div>
+        <div id="nickels" class="coin hidden"><img src="images/nickels.png" class="coin-img"/> <p id="nickels-output"></p></div>
+        <div id="pennies" class="coin hidden"><img src="images/pennies.png" class="coin-img"/> <p id="pennies-output"></p></div>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
   </body>
 </html>

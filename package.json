@@ -6,7 +6,7 @@
     "repository": {},
     "license": "mit",
     "scripts": {
-        "start": "static -H \"{\\\"Cache-Control\\\": \\\"no-cache, must-revalidate\\\"}\"",
+        "start": "static . -H \"{\\\"Cache-Control\\\": \\\"no-cache, must-revalidate\\\"}\"",
         "test": "mocha --exit"
     },
     "devDependencies": {
